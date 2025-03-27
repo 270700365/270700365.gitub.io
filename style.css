@@ -18,6 +18,12 @@
   background-color: #0056b3; /* Darker blue on hover */
 }
 
+.auth-buttons {
+  position: fixed; /* Fix the button at the top-right corner */
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Keeps it above other content */
+}
 
 
 /* Position the authentication buttons at the top-right */
