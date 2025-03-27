@@ -30,7 +30,7 @@
 .auth-buttons {
   position: absolute; /* Position relative to the header */
   top: 20px; /* Distance from the top */
-  right: 20px; /* Distance from the right edge */
+  right: 1000px; /* Distance from the right edge */
 }
 
 /* Style the Sign In and Sign Up buttons */
