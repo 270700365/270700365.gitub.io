@@ -1,57 +1,165 @@
-/* Position the Sign Up button at the top-right */
-.auth-buttons {
-  position: absolute; /* Positioning relative to the parent container */
-  top: 20px; /* 20px from the top */
-  right: 20px; /* 20px from the right edge */
-}
-.btn-signup {
-  background-color: #007BFF; /* Blue background */
-  color: white; /* White text */
-  padding: 10px 20px; /* Padding around the button */
-  border-radius: 5px; /* Rounded corners */
-  font-weight: bold; /* Bold text */
-  text-decoration: none; /* Remove underline from the link */
-  transition: background-color 0.3s; /* Smooth color transition */
+/* Reset some default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.btn-signup:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+/* General Body and Font Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.auth-buttons {
-  position: fixed; /* Fix the button at the top-right corner */
-  top: 20px;
-  right: 20px;
-  z-index: 20px; /* Keeps it above other content */
+#action-photo-background {
+  background-image: url('images/action.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust the height of the section */
+  color: white; /* Make text stand out */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* Position the authentication buttons at the top-right */
-.auth-buttons {
-  position: absolute; /* Position relative to the header */
-  top: 20px; /* Distance from the top */
-  right: 1000px; /* Distance from the right edge */
+/* Hero Section */
+#hero {
+  position: relative; /* Necessary for positioning content on top of the background */
+  background-image: url('images/cleaning-action.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Makes the section take up the full screen height */
 }
 
-/* Style the Sign In and Sign Up buttons */
-.btn-signin, .btn-signup {
-  background-color: #007BFF; /* Blue background color */
-  color: white; /* White text color */
-  padding: 10px 20px; /* Padding around the text */
-  margin-left: 10px; /* Space between buttons */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underline from links */
-  font-weight: bold; /* Make text bold */
-  transition: background-color 0.3s; /* Smooth background color change on hover */
+#hero .content {
+  position: absolute; /* Makes the content sit above the background */
+  top: 50%; /* Vertically centers the content */
+  left: 50%; /* Horizontally centers the content */
+  transform: translate(-50%, -50%); /* Adjusts to perfectly center it */
+  text-align: center; /* Centers the text inside */
+  color: white; /* Makes the text stand out */
+  z-index: 1; /* Ensures the content stays above the background image */
 }
 
-.btn-signin:hover, .btn-signup:hover {
-  background-color: #0056b3; /* Darker blue when hovered */
+h1 {
+  font-size: 3rem; /* Makes the heading larger */
 }
 
-/* Optional: Style the header */
+p {
+  font-size: 1.5rem; /* Makes the paragraph text larger */
+}
+
+/* Header Styling */
 header {
-  position: relative; /* Make sure the .auth-buttons can be positioned relative to the header */
-  padding: 20px;
-  background-color: #f8f8f8; /* Light background for the header */
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Hero Section */
+#hero {
+  background-image: url('images/hero-background.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the whole area */
+  background-position: center; /* Centers the image */
+  height: 60vh; /* The height of the hero section */
+  position: relative;
+  filter: blur(0px); /* Optional: Adds blur effect */
+  z-index: -1; /* Ensures the background is behind other content */
+}
+
+/* Content section inside the hero */
+#hero .content {
+position: absolute; /* Position the text content above the background */
+  top: 50%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%); /* Adjust the position */
+  color: white; /* Make the text white for better visibility */
+  text-align: center; /* Center the text */
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #ff9900;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #cc7a00;
+}
+
+/* Main Content Section */
+main {
+  padding: 2rem;
+}
+
+main h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Featured Image of Cleaning Service */
+#featured-image img {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
