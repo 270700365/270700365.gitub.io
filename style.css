@@ -22,7 +22,7 @@
   position: fixed; /* Fix the button at the top-right corner */
   top: 20px;
   right: 20px;
-  z-index: 1000; /* Keeps it above other content */
+  z-index: 20px; /* Keeps it above other content */
 }
 
 
