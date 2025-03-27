@@ -1,3 +1,25 @@
+/* Position the Sign Up button at the top-right */
+.auth-buttons {
+  position: absolute; /* Positioning relative to the parent container */
+  top: 20px; /* 20px from the top */
+  right: 20px; /* 20px from the right edge */
+}
+.btn-signup {
+  background-color: #007BFF; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding around the button */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline from the link */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.btn-signup:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
 /* Position the authentication buttons at the top-right */
 .auth-buttons {
   position: absolute; /* Position relative to the header */
