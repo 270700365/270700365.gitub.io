@@ -1,3 +1,23 @@
+header {
+  position: relative; /* So the text appears over the background */
+  background-image: url('https://th.bing.com/th/id/OIP.ymc5kcXrazP2makt9BlCCQHaDt?rs=1&pid=ImgDetMain'); /* The path to the GIF */
+  background-size: cover; /* Ensures the GIF covers the entire header */
+  background-position: center; /* Centers the GIF */
+  color: white; /* Makes text readable against the GIF */
+  padding: 80px 20px; /* Adds some space inside the header */
+  text-align: center; /* Centers the content */
+}
+
+header h1 {
+  font-size: 3rem; /* Larger text for the main heading */
+  margin-top: 20px; /* Adds some space at the top */
+}
+
+header h3, header p {
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* Adds space below text */
+}
+
 /* Reset some default styles for consistency */
 * {
   margin: 0;
